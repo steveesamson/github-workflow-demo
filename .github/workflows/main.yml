@@ -50,4 +50,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
         run: |
+          git add .
+          git commit -m "bumped version to ${{ env.NEW_VERSION}}"
           git push origin && git push --tags
