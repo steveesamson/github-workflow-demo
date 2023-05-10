@@ -1,6 +1,6 @@
 {
   "name": "github-workflow-demo",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "index.js",
   "repository": "https://github.com/steveesamson/github-workflow-demo.git",
   "author": "Steve S. Samson <stevee.samson@gmail.com>",
