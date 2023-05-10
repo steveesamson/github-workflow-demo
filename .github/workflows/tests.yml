@@ -1,8 +1,14 @@
 name: Test codebase
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  release:
+  tests:
     runs-on: ubuntu-latest
     steps:
       # Checkout project repository
@@ -17,8 +23,8 @@ jobs:
 
       #   Install dependencies (required by Run tests step)
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       # Tests
       - name: Run tests
-        run: yarn test
+        run: npm test
