@@ -1,4 +1,4 @@
-name: Release package
+name: Check Release
 on:
   workflow_dispatch:
     inputs:
